@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://shrike-505.github.io/changelog/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://shrike-505.github.io/stories/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
@@ -27,6 +32,11 @@
     </url>
     <url>
          <loc>https://shrike-505.github.io/stories/Mice/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://shrike-505.github.io/stories/Newcar/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -77,6 +87,11 @@
     </url>
     <url>
          <loc>https://shrike-505.github.io/thoughts/Unspoken/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://shrike-505.github.io/tutorials/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
