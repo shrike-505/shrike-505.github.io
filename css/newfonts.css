@@ -27,11 +27,15 @@ h1,
 .md-source__repository,
 .timeline,
 div.md-footer-meta.md-typeset a,
-p,footer,small  {
+footer,small  {
     font-family: "PrincessSofia";
 }
 div.changelog-content a:link, div.changelog-content a:visited {
     /* border: 2px rgb(112, 57, 157);
     background-color: rgb(246, 199, 244); */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#__comments {
+    font-family: "unicode";
 }
