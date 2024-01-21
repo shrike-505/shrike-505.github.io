@@ -803,6 +803,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#function-domain-localglobal-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Domain &amp; Local/Global Frame
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -920,7 +929,7 @@
 
 <h1 id="cs61a-23fall">CS61A 学习笔记（23Fall）<a class="headerlink" href="#cs61a-23fall" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 125 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 14 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 140 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 19 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 1 分钟</p>
 </div>
 <div class="admonition note 课程资源">
 <p class="admonition-title">Note</p>
@@ -929,28 +938,49 @@
 </div>
 <h2 id="function-currying">Function Currying<a class="headerlink" href="#function-currying" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p><strong>Curry</strong> : transforming a function that takes <strong>multiple arguments</strong> into a function that takes <strong>a single argument</strong> and returns another function that takes the next argument, and so on, until all arguments have been supplied.<br />
+<p><strong>Curry</strong> : transforming a function that takes <strong>multiple arguments</strong> into a function that takes <strong>a single argument</strong> and returns another function that takes the next argument, and so on, until all arguments have been supplied.  </p>
+</blockquote>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">curry2</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="k">return</span> <span class="n">h</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">return</span> <span class="n">g</span>
-</code></pre></div></p>
-</blockquote>
-<p>Firstly <span class="arithmatex">\(curry2\)</span> takes a function <span class="arithmatex">\(f\)</span> as argument (<span class="arithmatex">\(f\)</span> takes 2 arguments),returning a fuction <span class="arithmatex">\(g\)</span>.As for <span class="arithmatex">\(g\)</span>,it defines <span class="arithmatex">\(h\)</span>,which returns an output of <span class="arithmatex">\(f\)</span>,and returns a function h.
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Firstly <span class="arithmatex">\(curry2\)</span> takes a function <span class="arithmatex">\(f\)</span> as argument (<span class="arithmatex">\(f\)</span> takes 2 arguments),returning a fuction <span class="arithmatex">\(g\)</span>.As for <span class="arithmatex">\(g\)</span>,it defines <span class="arithmatex">\(h\)</span>,which returns an output of <span class="arithmatex">\(f\)</span>,and returns a function h.</p>
+</div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">mymax</span> <span class="o">=</span> <span class="n">curry2</span><span class="p">(</span><span class="nb">max</span><span class="p">)</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">def</span> <span class="nf">comparexwith3</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">==</span> <span class="n">mymax</span><span class="p">(</span><span class="n">x</span><span class="p">)(</span><span class="mi">3</span><span class="p">)</span>
-</code></pre></div></p>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
 <p><span class="arithmatex">\(mymax\)</span> equals to <span class="arithmatex">\(g\)</span> in the definition above,taking 1 argument <span class="arithmatex">\(x\)</span> to transform into another function <span class="arithmatex">\(h\)</span> aka <span class="arithmatex">\(max(x)\)</span>,which also takes 1 argument <span class="arithmatex">\(y\)</span>,thus aka <span class="arithmatex">\(mymax(x)(y)\)</span>  </p>
-<p><span class="arithmatex">\(comparexwith3\)</span> returns if <span class="arithmatex">\(x\)</span> is larger than 3.<br />
+</div>
+<p><span class="arithmatex">\(comparexwith3\)</span> returns if <span class="arithmatex">\(x\)</span> is larger than 3.  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">python3</span> <span class="o">-</span><span class="n">i</span> <span class="n">improve</span><span class="o">.</span><span class="n">py</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">comparexwith3</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kc">True</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">comparexwith3</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kc">False</span>
-</code></pre></div></p>
+</code></pre></div>
+<h2 id="function-domain-localglobal-frame">Function Domain &amp; Local/Global Frame<a class="headerlink" href="#function-domain-localglobal-frame" title="Permanent link">&para;</a></h2>
+<ol>
+<li>What will the following code fragment print?</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="n">a</span><span class="o">*</span><span class="n">g</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">f</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">y</span><span class="p">)(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>
+<details>
+<summary>Answer</summary>
+
+4
+</details>
 
   <hr>
 <div class="md-source-file">
