@@ -920,6 +920,8 @@
       
         
       
+        
+      
     
     
     
@@ -971,6 +973,26 @@
   
   <span class="md-ellipsis">
     年终总结
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/summer_idle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    暑假指南
   </span>
   
 
@@ -1120,7 +1142,7 @@ In other conditions, e.g <code>x or(and) y</code>, both arguments are considered
 <p>Another type of collection, called a dictionary, allows us to store and access values that correspond to given keys.</p>
 </blockquote>
 <p><code>dict.keys()</code> will return a sequence of keys.<br />
-<code>dict.values()</code> will return a sequence of values.
+<code>dict.values()</code> will return a sequence of values.<br />
 <code>dict.items()</code> will return a sequence of key-value tuples.</p>
 <h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h2>
 <h3 id="some-functionoperator-details">Some function/operator details<a class="headerlink" href="#some-functionoperator-details" title="Permanent link">&para;</a></h3>
@@ -1151,6 +1173,53 @@ In other conditions, e.g <code>x or(and) y</code>, both arguments are considered
 
 
 
+
+  <h2 id="__comments">评论</h2>
+  <script src="https://giscus.app/client.js"
+        data-repo="shrike-505/shrike-505.github.io"
+        data-repo-id="R_kgDOKfuSyA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKfuSyM4Ca9sf"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+  </script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
