@@ -1313,7 +1313,7 @@
 
 <h1 id="ii">数学分析Ⅱ<a class="headerlink" href="#ii" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 596 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 2 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 588 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 2 分钟</p>
 </div>
 <blockquote>
 <p>任课教师：阮火军</p>
@@ -1327,6 +1327,7 @@
 </ul>
 </div>
 <h2 id="_1">上下极限<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>定义：</p>
 <div class="arithmatex">\[
 \begin{align*}
 &amp;如果给定数列\{x_n\}满足\\
@@ -1335,32 +1336,20 @@
 &amp;则称a为数列\{x_n\}的上极限，记为\lim_{n \to \infty} \sup x_n = a \\
 \end{align*}
 \]</div>
-<p>结论：有界数列必有上极限 </p>
-<div class="arithmatex">\[
-\begin{gather}
-    若\{x_n\}存在发散于 +\infty 的子列，则\lim_{n \to \infty} \sup x_n = +\infty
-\end{gather}
-\]</div>
-<p>一个弱化一点的情况：</p>
-<div class="arithmatex">\[
-\begin{align*}
-    &amp;对于有界数列，其收敛子列(由Weierstrass定理知必存在收敛子列)的极限值组成集合E=\{ \xi \mid \xi = \lim_{n \to \infty} x_{n_k} \} \\
-    &amp;那么\max E = \lim_{n \to \infty} \sup x_n \\
-    &amp;事实上，此时\max E= \sup E\\
-    &amp;除此之外，对任意数列，E中还包含\{x_n\}的发散子列的非正常极限(亦即\pm \infty) \\
-    &amp;此时 \lim_{n \to \infty} \sup x_n = \sup E
-\end{align*}
-\]</div>
+<p>结论：(1)有界数列必有上极限<br />
+(2)若<span class="arithmatex">\(\{x_n\}\)</span>存在发散于 <span class="arithmatex">\(+\infty\)</span> 的子列，则<span class="arithmatex">\(\lim_{n \to \infty} \sup x_n = +\infty\)</span></p>
+<p>一个弱化一点的情况：<br />
+对于有界数列，其收敛子列(由<span class="arithmatex">\(Weierstrass\)</span>定理知必存在收敛子列)的极限值组成集合<span class="arithmatex">\(E=\{ \xi \mid \xi = \lim_{n \to \infty} x_{n_k} \}\)</span><br />
+那么<span class="arithmatex">\(\max E = \lim_{n \to \infty} \sup x_n\)</span><br />
+事实上，此时<span class="arithmatex">\(\max E= \sup E\)</span><br />
+除此之外，对任意数列，E中还包含<span class="arithmatex">\(\{x_n\}\)</span>的发散子列的非正常极限(亦即<span class="arithmatex">\(\pm \infty\)</span>)<br />
+此时<span class="arithmatex">\(\lim_{n \to \infty} \sup x_n = \sup E\)</span></p>
 <h3 id="_2">性质：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<div class="arithmatex">\[
-\begin{align*}
-&amp;\forall 上极限存在的\{x_n\},\{y_n\}，成立下述关系：\\
-&amp;(1)\lim_{n \to \infty} \sup (x_n+y_n) \leq \lim_{n \to \infty} \sup x_n + \lim_{n \to \infty} \sup y_n \\
-&amp;(2)若\forall n \ge 1都存在x_n \le y_n,则\lim_{n \to \infty} \sup x_n \leq \lim_{n \to \infty} \sup y_n 且 \lim_{n \to \infty} \inf x_n \leq \lim_{n \to \infty} \inf y_n \\
-&amp;(3)\alpha&gt;0时，\lim_{n \to \infty} \sup \alpha x_n = \alpha \lim_{n \to \infty} \sup x_n \\
-&amp;(4)\{x_n\}收敛或发散至\pm \infty 的充要条件是\lim_{n \to \infty} \sup x_n = \lim_{n \to \infty} \inf x_n \\
-\end{align*}
-\]</div>
+<p><span class="arithmatex">\(\forall\)</span> 上极限存在的<span class="arithmatex">\(\{x_n\}\)</span>,<span class="arithmatex">\(\{y_n\}\)</span>，成立下述关系： <br />
+(1)<span class="arithmatex">\(\lim_{n \to \infty} \sup (x_n+y_n) \leq \lim_{n \to \infty} \sup x_n + \lim_{n \to \infty} \sup y_n \\\)</span><br />
+(2)<span class="arithmatex">\(若\forall n \ge 1都存在x_n \le y_n,则\lim_{n \to \infty} \sup x_n \leq \lim_{n \to \infty} \sup y_n 且 \lim_{n \to \infty} \inf x_n \leq \lim_{n \to \infty} \inf y_n\)</span><br />
+(3)<span class="arithmatex">\(\alpha&gt;0时，\lim_{n \to \infty} \sup \alpha x_n = \alpha \lim_{n \to \infty} \sup x_n\)</span><br />
+(4)<span class="arithmatex">\(\{x_n\}\)</span>收敛或发散至<span class="arithmatex">\(\pm \infty\)</span> 的充要条件是<span class="arithmatex">\(\lim_{n \to \infty} \sup x_n = \lim_{n \to \infty} \inf x_n\)</span>  </p>
 <h2 id="_3">级数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="_4">定义部分和数列<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[
