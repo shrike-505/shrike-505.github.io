@@ -1289,7 +1289,7 @@
 
 <h1 id="_1">离散数学<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 371 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 373 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 1 分钟</p>
 </div>
 <blockquote>
 <p>任课教师：郑文庭</p>
@@ -1297,32 +1297,42 @@
 <div class="admonition overview">
 <p class="admonition-title">Overview</p>
 <ul>
-<li>数学推理</li>
+<li>数学推理<ul>
 <li>数理逻辑与证明</li>
 <li>归纳法</li>
+</ul>
+</li>
 <li>数论基础</li>
-<li>组合分析</li>
+<li>组合分析<ul>
 <li>计数方法</li>
-<li>离散结构</li>
+</ul>
+</li>
+<li>离散结构<ul>
 <li>基本结构</li>
 <li>关系</li>
 <li>图</li>
 <li>树</li>
-<li>算法思维</li>
+</ul>
+</li>
+<li>算法思维<ul>
 <li>算法</li>
 <li>递归  </li>
 </ul>
+</li>
+</ul>
 </div>
 <h2 id="_2">逻辑<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>逻辑运算符优先级<img alt="" src="../../../img/dmop.png" /><br />
+<p>逻辑运算符优先级<br />
+<img alt="" src="../../../img/dmop.png" /><br />
 taulogy: 恒真，如<code>p∨¬p</code><br />
 contradiction: 恒假，如<code>p∧¬p</code><br />
 contingency: “可能发生的”，既非taulogy又非contradiction，如<code>p</code> <br />
-dual: 将逻辑表达式中的<code>∧</code>和<code>∨</code>互换，<code>T</code>和<code>F</code>互换，<code>¬</code>不变<br />
-  - s与t等价，当且仅当s的dual与t的dual等价  <br />
-p NOR(<span class="arithmatex">\(\downarrow\)</span>) q: is true when both are false, otherwise false.（对<span class="arithmatex">\(\vee\)</span>取反）<br />
-p NAND($\mid</p>
-<p>$) q: is true when either or both are false（有假为假，其余情况为真）</p>
+dual（对偶）: 将逻辑表达式中的<code>∧</code>和<code>∨</code>互换，<code>T</code>和<code>F</code>互换，<code>¬</code>不变  </p>
+<ul>
+<li>s与t等价，当且仅当s的dual与t的dual等价    </li>
+</ul>
+<p>p NOR(<span class="arithmatex">\(\downarrow\)</span>) q: is true when both are false, otherwise false.（对<span class="arithmatex">\(\vee\)</span>取反）<br />
+p NAND(<span class="arithmatex">\(\mid\)</span>) q: is true when either or both are false（有假为假，其余情况为真）</p>
 <h3 id="de-morgans-law">De Morgan's Law:<a class="headerlink" href="#de-morgans-law" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>¬(p∧q)</code> = <code>¬p∨¬q</code></li>
@@ -1339,13 +1349,15 @@ p NAND($\mid</p>
 <p><img alt="" src="../../../img/dmlogic.png" /></p>
 <details class="例">
 <summary>例</summary>
+<p>对数独方框进行坐标划分</p>
+<ul>
+<li>共9列9行，每个格子可填1-9的数字  </li>
+<li>以<span class="arithmatex">\(p(i,j,n)\)</span>表示第i行第j列的格子中填入数字n  </li>
+<li>假设在第3行第4列的格子中填入数字5，则<span class="arithmatex">\(p(3,4,5)\)</span>为真，<span class="arithmatex">\(\forall 1 \le j \le 3 以及5\le j\le 9，p(3,j,5)\)</span>为假  </li>
+<li>于是检索每行：<span class="arithmatex">\(\bigwedge_{i=1}^9 \bigwedge_{n=1}^9 \bigvee_{j=1}^9 p(i,j,n)\)</span>  </li>
+<li>检索每列：<span class="arithmatex">\(\bigwedge_{j=1}^9 \bigwedge_{n=1}^9 \bigvee_{i=1}^9 p(i,j,n)\)</span></li>
+</ul>
 </details>
-<p>对数独方框进行坐标划分<br />
-  - 共9列9行，每个格子可填1-9的数字<br />
-  - 以<span class="arithmatex">\(p(i,j,n)\)</span>表示第i行第j列的格子中填入数字n<br />
-  - 假设在第3行第4列的格子中填入数字5，则<span class="arithmatex">\(p(3,4,5)\)</span>为真，<span class="arithmatex">\(\forall 1 \le j \le 3 以及5\le j\le 9，p(3,j,5)\)</span>为假<br />
-  - 于是检索每行：<span class="arithmatex">\(\bigwedge_{i=1}^9 \bigwedge_{n=1}^9 \bigvee_{j=1}^9 p(i,j,n)\)</span><br />
-  - 检索每列：<span class="arithmatex">\(\bigwedge_{j=1}^9 \bigwedge_{n=1}^9 \bigvee_{i=1}^9 p(i,j,n)\)</span></p>
 
 
 
