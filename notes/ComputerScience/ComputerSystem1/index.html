@@ -1501,20 +1501,28 @@ logisim: 画电路图，验证功能，将电路转为verilog文件  </p>
 <p>用n个bit的的二进制数编码一个真值（true value）为X的数字，编码后得到机器数（machine number）<br />
 <span class="arithmatex">\(X = X_{n-1}X_{n-2}\dots X_1X_0\)</span><br />
 无符号整数(unsigned integer)范围: <span class="arithmatex">\(0 \le X \le 2^n - 1\)</span>  <br />
-有符号整数(signed integer)范围: 编码方式不同，有不同的范围<br />
-- 原码(original code)：最高位为符号位，0为正，1为负<br />
-  - 缺点：0有两种表示，+0和-0，导致可表示的范围减小1
-  - Hardware Complexity
-  - 二进制加法失效
-- 反码(one's complement)：正数的反码与原码相同，负数的反码是对应正数的原码的每一位取反
-  - 优点：二进制加法后，将进位加到最后一位上即可得到正确结果
-  - 缺点：0还是有两种表示，+0和-0
-- 补码(two's complement)：正数的补码与原码相同，负数的补码是对应正数的原码的每一位取反，然后加1
-  - 优点：0只有一种表示
-  - 缺点：最小的负数没有对应的正数
-  - 二进制加法后，将进位丢弃即可得到正确结果
-  - 用补码表示的负数的绝对值是对应正数的原码的每一位取反，然后加1
-  - 补码的范围：<span class="arithmatex">\(-2^{n-1} \le X \le 2^{n-1} - 1\)</span>  </p>
+有符号整数(signed integer)范围: 编码方式不同，有不同的范围  </p>
+<ul>
+<li>原码(original code)：最高位为符号位，0为正，1为负  <ul>
+<li>缺点：0有两种表示，+0和-0，导致可表示的范围减小1</li>
+<li>Hardware Complexity</li>
+<li>二进制加法失效</li>
+</ul>
+</li>
+<li>反码(one's complement)：正数的反码与原码相同，负数的反码是对应正数的原码的每一位取反<ul>
+<li>优点：二进制加法后，将进位加到最后一位上即可得到正确结果</li>
+<li>缺点：0还是有两种表示，+0和-0</li>
+</ul>
+</li>
+<li>补码(two's complement)：正数的补码与原码相同，负数的补码是对应正数的原码的每一位取反，然后加1<ul>
+<li>优点：0只有一种表示</li>
+<li>缺点：最小的负数没有对应的正数</li>
+<li>二进制加法后，将进位丢弃即可得到正确结果</li>
+<li>用补码表示的负数的绝对值是对应正数的原码的每一位取反，然后加1</li>
+<li>补码的范围：<span class="arithmatex">\(-2^{n-1} \le X \le 2^{n-1} - 1\)</span>  </li>
+</ul>
+</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Modulo Operation</p>
 <p>If <span class="arithmatex">\(A,B,M\)</span> satisfy <span class="arithmatex">\(A = B + K \times M\)</span>, then <span class="arithmatex">\(A \equiv B \pmod M\)</span></p>
