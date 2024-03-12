@@ -1187,6 +1187,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="函数列与函数项级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      柯西收敛准则（典中典）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1652,6 +1667,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="函数列与函数项级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      柯西收敛准则（典中典）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1674,7 +1704,7 @@
 
 <h1 id="ii">数学分析Ⅱ<a class="headerlink" href="#ii" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2137 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 6 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1587 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 5 分钟</p>
 </div>
 <blockquote>
 <p>任课教师：阮火军</p>
@@ -1937,6 +1967,43 @@
 则对于由所有乘积<span class="arithmatex">\(a_i b_j\)</span>任意排序再求和得到的级数也绝对收敛，<br />
 且其和等于AB。 </p>
 <h2 id="_15">函数列与函数项级数<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>定义：<span class="arithmatex">\(f_1,f_2,\dots,f_n,\dots\)</span>是定义在<span class="arithmatex">\(E\)</span>上的函数，<br />
+则<span class="arithmatex">\(\{f_n\}\)</span>为<span class="arithmatex">\(E\)</span>上的一个函数列。
+<span class="arithmatex">\(\forall x \in E\)</span>，若<span class="arithmatex">\(\{f_n(x)\}\)</span>收敛于<span class="arithmatex">\(f(x)\)</span>，则称<span class="arithmatex">\(\{f_n\}\)</span>收敛于<span class="arithmatex">\(f\)</span>，记为<span class="arithmatex">\(f_n \rightarrow f\)</span></p>
+<p>若<span class="arithmatex">\(x_0 \in E\)</span>，所有<span class="arithmatex">\(\{f_n(x_0)\}\)</span>都收敛于<span class="arithmatex">\(f(x_0)\)</span>，则称<span class="arithmatex">\(\{f_n\}\)</span>在<span class="arithmatex">\(x_0\)</span>处收敛于<span class="arithmatex">\(f(x_0)\)</span>，记为<span class="arithmatex">\(f_n \rightarrow f(x_0)\)</span><br />
+点集<span class="arithmatex">\(\{x \in E \mid \{f_n(x)\} 收敛\}\)</span>称为<span class="arithmatex">\(\{f_n\}\)</span>的收敛域  </p>
+<p>点态收敛：<span class="arithmatex">\(\forall x \in D, \forall \epsilon &gt; 0, \exists N(\epsilon ,x) &gt; 0, 当n&gt;N(\epsilon ,x)时，有|f_n(x)-f(x)|&lt;\epsilon\)</span><br />
+一致收敛：<span class="arithmatex">\(\forall \epsilon &gt; 0, \exists N(\epsilon) &gt; 0(与x无关), 当n&gt;N(\epsilon)时，有|f_n(x)-f(x)|&lt;\epsilon\)</span>，记为<span class="arithmatex">\(f_n \rightrightarrows f\)</span><br />
+不一致收敛：<span class="arithmatex">\(\exists \epsilon_0 &gt; 0, \forall N &gt; 0, \exists n&gt;N, 使得|f_n(x)-f(x)| \ge \epsilon_0\)</span>
+一致收敛必定点态收敛。</p>
+<details class="例">
+<summary>例</summary>
+<ul>
+<li>证明<span class="arithmatex">\(f_n(x) = x^n 在[0,1]\)</span>不一致收敛  <ul>
+<li><span class="arithmatex">\(f(x) = \lim_{n \to \infty} x^n = \begin{cases} 0 &amp; x \in [0,1) \\ 1 &amp; x = 1 \end{cases}\)</span></li>
+<li>取<span class="arithmatex">\(\epsilon_0 = \frac{1}{2}\)</span>，则<span class="arithmatex">\(\forall N &gt; 0\)</span>, 令<span class="arithmatex">\(n = N+1\)</span>, 令<span class="arithmatex">\(x = \sqrt[n](\frac{1}{2})\)</span></li>
+<li>则<span class="arithmatex">\(|f_n(x)-f(x)| = \frac{1}{2} \ge \epsilon_0\)</span></li>
+</ul>
+</li>
+<li>而这个函数在<span class="arithmatex">\([0,1-\delta],\forall \delta \in (0,1)\)</span>上一致收敛<ul>
+<li><span class="arithmatex">\(\forall x \in [0,1-\delta], |f_n(x)-f(x)| = x^n \le (1-\delta)^n \le (1-\delta)^N = \epsilon (取N=\frac{\ln \epsilon}{\ln (1-\delta)})\)</span></li>
+</ul>
+</li>
+</ul>
+</details>
+<h3 id="_16">柯西收敛准则（典中典）<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>定义：<span class="arithmatex">\(\{f_n\}\)</span>在<span class="arithmatex">\(E\)</span>上一致收敛的充要条件是<span class="arithmatex">\(\forall \epsilon &gt; 0, \exists N(\epsilon) &gt; 0, 当m,n&gt;N(\epsilon)时，有|f_n(x)-f_m(x)|&lt;\epsilon\)</span><br />
+由此可推出另一充要条件：记<span class="arithmatex">\(\sup_{x \in E} |f_n(x)-f(x)| = M_{n}\)</span>，则<span class="arithmatex">\(\{f_n\}\)</span>在<span class="arithmatex">\(E\)</span>上一致收敛的充要条件是<span class="arithmatex">\(\lim_{n \to \infty} M_{n} = 0\)</span></p>
+<details class="例">
+<summary>例</summary>
+<ul>
+<li>判断<span class="arithmatex">\(f_n(x) = nxe^{-nx^2}\)</span>在<span class="arithmatex">\(R\)</span>上的一致收敛性</li>
+<li>（配凑<span class="arithmatex">\(nx^2\)</span>）<span class="arithmatex">\(\lim_{n \to \infty} nxe^{-nx^2} = \frac{1}{x} \lim_{n \to \infty} \frac{nx^2}{e^{nx^2}} = \frac{1}{x} 0 = 0\)</span></li>
+<li>因此极限函数<span class="arithmatex">\(f(x) = 0\)</span>,<span class="arithmatex">\(f_n(x)-f(x) = f_n(x)\)</span>  </li>
+<li>求导得<span class="arithmatex">\(f_n'(x) = ne^{-nx^2}(1-2nx^2)\)</span>，令<span class="arithmatex">\(f_n'(x) = 0\)</span>得<span class="arithmatex">\(x = \frac{1}{\sqrt{2n}}\)</span>，此为最大值点</li>
+<li>则<span class="arithmatex">\(M_n = f_n(\frac{1}{\sqrt{2n}})\)</span>，不趋于0.</li>
+</ul>
+</details>
 
 
 
@@ -1959,7 +2026,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年3月8日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年3月12日</span>
   </span>
 
     
