@@ -1721,16 +1721,18 @@
 <h2 id="ode_4">高阶ode<a class="headerlink" href="#ode_4" title="Permanent link">&para;</a></h2>
 <h3 id="ode_5">可降阶的二阶ode<a class="headerlink" href="#ode_5" title="Permanent link">&para;</a></h3>
 <ol>
-<li>
-<p><span class="arithmatex">\(y^n = f(x)\)</span>
-   - 解法：直接积分n次
-   - 较为简单，注意每次积分都要加上常数</p>
-</li>
-<li>
-<p><span class="arithmatex">\(y'' = f(x,y')\)</span> (无<span class="arithmatex">\(y\)</span>)
-   - 解法：令<span class="arithmatex">\(y' = p\)</span>, 则<span class="arithmatex">\(y'' = p'\)</span>, 于是原方程化为一阶方程<span class="arithmatex">\(p' = f(x,p)\)</span></p>
-</li>
+<li><span class="arithmatex">\(y^n = f(x)\)</span></li>
 </ol>
+<ul>
+<li>解法：直接积分n次</li>
+<li>较为简单，注意每次积分都要加上常数</li>
+</ul>
+<ol start="2">
+<li><span class="arithmatex">\(y'' = f(x,y')\)</span> (无<span class="arithmatex">\(y\)</span>)</li>
+</ol>
+<ul>
+<li>解法：令<span class="arithmatex">\(y' = p\)</span>, 则<span class="arithmatex">\(y'' = p'\)</span>, 于是原方程化为一阶方程<span class="arithmatex">\(p' = f(x,p)\)</span></li>
+</ul>
 <details class="例">
 <summary>例</summary>
 <ul>
@@ -1745,10 +1747,12 @@
 </ul>
 </details>
 <ol start="3">
-<li><span class="arithmatex">\(y'' = f(y,y')\)</span> (无<span class="arithmatex">\(x\)</span>)
-   - 解法：令<span class="arithmatex">\(y' = p\)</span>, 则<span class="arithmatex">\(y'' = \frac{dp}{dx} = \frac{dp}{dy} \frac{dy}{dx} = p\frac{dp}{dy}\)</span>, 于是原方程化为一阶方程<span class="arithmatex">\(p\frac{dp}{dy} = f(y,p)\)</span>
-   - 这里将p看作y的函数，也即自变量是y，因变量是p</li>
+<li><span class="arithmatex">\(y'' = f(y,y')\)</span> (无<span class="arithmatex">\(x\)</span>)</li>
 </ol>
+<ul>
+<li>解法：令<span class="arithmatex">\(y' = p\)</span>, 则<span class="arithmatex">\(y'' = \frac{dp}{dx} = \frac{dp}{dy} \frac{dy}{dx} = p\frac{dp}{dy}\)</span>, 于是原方程化为一阶方程<span class="arithmatex">\(p\frac{dp}{dy} = f(y,p)\)</span></li>
+<li>这里将p看作y的函数，也即自变量是y，因变量是p</li>
+</ul>
 <details class="例">
 <summary>例</summary>
 <ul>
