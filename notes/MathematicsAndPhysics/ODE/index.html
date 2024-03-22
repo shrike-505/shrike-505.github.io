@@ -1875,8 +1875,10 @@ n = 2时，若<span class="arithmatex">\(\frac{y_2(x)}{y_1(x)}\)</span>是常数
 有如下性质：</p>
 <ol>
 <li>若<span class="arithmatex">\(y_1(x),y_2(x)\)</span>是齐次方程的两个解，则<span class="arithmatex">\(C_1y_1(x) + C_2y_2(x)\)</span>也是齐次方程的解</li>
-<li>若<span class="arithmatex">\(y_1(x),y_2(x)\)</span>是齐次方程的两个特解，且线性无关，则齐次方程的通解为<span class="arithmatex">\(y = C_1y_1(x) + C_2y_2(x)\)</span></li>
+<li>若<span class="arithmatex">\(y_1(x),y_2(x)\)</span>是齐次方程的两个特解，且线性无关，则齐次方程的通解为<span class="arithmatex">\(y = C_1y_1(x) + C_2y_2(x)\)</span><ol>
 <li>推论：n阶齐次线性ode的n个特解的线性组合是通解</li>
+</ol>
+</li>
 </ol>
 <details class="例">
 <summary>例</summary>
@@ -1898,18 +1900,26 @@ n = 2时，若<span class="arithmatex">\(\frac{y_2(x)}{y_1(x)}\)</span>是常数
 <p>一般形式：<span class="arithmatex">\(y'' + py' + qy = 0\)</span>(p,q为常数)<br />
 注意到这表示<span class="arithmatex">\(y,y',y''\)</span>的线性组合为0，考虑指数函数<span class="arithmatex">\(y = e^{rx}\)</span>，代入方程得<span class="arithmatex">\(r^2 + pr + q = 0\)</span>，即对应的特征方程，只需取满足该方程的r.  </p>
 <ol>
-<li><span class="arithmatex">\(p^2 - 4q&gt;0\)</span> 时，有两根<span class="arithmatex">\(r_1 \neq r_2\)</span></li>
+<li><span class="arithmatex">\(p^2 - 4q&gt;0\)</span> 时，有两根<span class="arithmatex">\(r_1 \neq r_2\)</span><ol>
 <li>则两特解<span class="arithmatex">\(y_1 = e^{r_1 x}, y_2 = e^{r_2 x}\)</span></li>
 <li>通解为<span class="arithmatex">\(y = C_1 e^{r_1 x} + C_2 e^{r_2 x}\)</span></li>
-<li><span class="arithmatex">\(p^2 - 4q = 0\)</span> 时，有两根<span class="arithmatex">\(r_1 = r_2 = r\)</span></li>
+</ol>
+</li>
+<li><span class="arithmatex">\(p^2 - 4q = 0\)</span> 时，有两根<span class="arithmatex">\(r_1 = r_2 = r\)</span><ol>
 <li>通解为<span class="arithmatex">\(y = (C_1 + C_2 x) e^{r x}\)</span></li>
-<li><span class="arithmatex">\(p^2 - 4q &lt; 0\)</span> 时，有两复根<span class="arithmatex">\(r_{1,2} = \alpha \pm i\beta\)</span></li>
+</ol>
+</li>
+<li><span class="arithmatex">\(p^2 - 4q &lt; 0\)</span> 时，有两复根<span class="arithmatex">\(r_{1,2} = \alpha \pm i\beta\)</span><ol>
 <li>通解为<span class="arithmatex">\(y = e^{\alpha x}(C_1 \cos \beta x + C_2 \sin \beta x)\)</span></li>
-<li>推论：<span class="arithmatex">\(y^{(n)} + p_1 y^{(n-1)} + \cdots + p_n y = 0\)</span>的特征方程为<span class="arithmatex">\(r^n + p_1 r^{n-1} + \cdots + p_n = 0\)</span></li>
+</ol>
+</li>
+<li>推论：<span class="arithmatex">\(y^{(n)} + p_1 y^{(n-1)} + \cdots + p_n y = 0\)</span>的特征方程为<span class="arithmatex">\(r^n + p_1 r^{n-1} + \cdots + p_n = 0\)</span><ol>
 <li>在复数范围内有n个根，把下面的几个对应通解加起来</li>
-<li><span class="arithmatex">\(k\)</span>重实根<span class="arithmatex">\(r\)</span>对应<span class="arithmatex">\(e^{rx} (C_0, C_1 x, \cdots, C_{k-1} x^{k-1})\)</span></li>
+<li><span class="arithmatex">\(k\)</span>重实根<span class="arithmatex">\(r\)</span>对应<span class="arithmatex">\(e^{rx} (C_0 + C_1 x + \cdots + C_{k-1} x^{k-1})\)</span></li>
 <li><span class="arithmatex">\(k\)</span>重虚根<span class="arithmatex">\(\alpha \pm \beta i\)</span>对应<span class="arithmatex">\([(a_0 + a_1 x + \cdots + a_{k-1} x^{k-1})\cos \beta x + (b_0 + b_1 x + \cdots + b_{k-1} x^{k-1})\sin \beta x]e^{\alpha x}\)</span></li>
 <li>上述<span class="arithmatex">\(a_i, b_i, C_i\)</span>为任意常数</li>
+</ol>
+</li>
 </ol>
 <details class="例">
 <summary>例</summary>
