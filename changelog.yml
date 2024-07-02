@@ -1,0 +1,95 @@
+- "2024":
+  - "2024.5.11":
+    - function: 添加了一些插件
+  - "2024.4.18":
+    - newart:
+        text: 🌼诅咒 —— 斟满一朵花的眼泪。
+        href: /stories/Curse
+  - "2024.3.3":
+    - newpage:
+        text: 🛜更新博客界面
+        href: /casual/
+  - "2024.2.27":
+    - newpage:
+        text: 📚添加了一堆笔记
+        href: /notes/
+  - "2024.2.19":
+    - newpage:
+        text: ☀完成暑假指南
+        href: /others/summer_idle
+  - "2024.1.23":
+    - function: 新增了酷酷的字体
+  - "2024.1.20":
+    - newpage:
+        text: 添加 CS61A 笔记
+        href: /notes/ComputerScience/cs61a
+  - "2024.1.15":
+    - newpage:
+        text: 📝新增年终总结
+        href: /others/final
+
+- "2023":
+  - "2023.11.16": 
+    - function: 更新了一大堆玩意，比如这个记录，网页图标，以及目录形式。
+  - "2023.10.15":
+    - newart:
+        text: 🦶痛风 —— “须知参差多态，乃是幸福的本源。”
+        href: /thoughts/Gaut
+  - "2023.9.14": 
+    - newart:
+        text: 👨‍👩‍👧‍👦故乡 —— 今夜我陪你化成灰。
+        href: /thoughts/Homesick
+  - "2023.7.5": 
+    - newart:
+        text: 👮‍正义 —— 对，对吗？
+        href: /stories/Justice
+  - "2023.4.6": 
+    - newart:
+        text: 🎴愚者 —— 看看你的幽默感
+        href: /stories/Fool
+  - "2023.2.3":
+    - newart:
+        text: 🐏羊杂 —— 能写死董卓乎？
+        href: /thoughts/Gut
+
+- "2022":
+  - "2022.12.4": 
+    - newart:
+        text: 🌶️花椒 —— 人道主义之母德洛莉丝·黛，希望你的思想不会着凉。
+        href: /stories/Pepper
+  - "2022.10.29": 
+    - newart:
+        text: 🪙富贵 —— 无意义的念想们。
+        href: /thoughts/Fortune
+  - "2022.9.20": 
+    - newart:
+        text: 🏴蛋白 —— 如何妥协
+        href: /stories/Protein
+  - "2022.8.25": 
+    - newart:
+        text: 🌤烟消 —— 我不知道她是谁。
+        href: /stories/Vanishment
+  - "2022.5.4": 
+    - newart:
+        text: 🔕希音 —— 为什么？
+        href: /thoughts/Unspoken
+  - "2022.1.29":
+    - newart:
+        text: 🚗新车 —— “红色象征着热情，奔放，以及速度。” 
+        href: /stories/Newcar
+  - "2022.1.23": 
+    - newart:
+        text: 🌫️硝烟 —— “在无比刺鼻的气味将要摧毁他的瞬间，她的名字渐渐显现。”
+        href: /stories/Gunpowdersmoke
+
+- "2021":
+  - "2021.2.16":
+    - newart:
+        text: 🔫尺兵 —— 那一天是个雨天，天上飘的全是雨点。
+        href: /stories/Weapon
+
+- "2020":
+  - "2020.10.24":
+    - newart:
+        text: 🐀老鼠 —— “理想主义者，不应归属于老鼠之列。”
+        href: /stories/Mice
