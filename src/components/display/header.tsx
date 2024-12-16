@@ -33,6 +33,7 @@ export const ProfileNameStandout = ({
                     position: relative;
                     text-decoration: none;
                     transition-duration: 0.5s;
+                    font-family: 'Heiti TC', 'Victor Mono';
                 }
 
                 .standout::after {
@@ -67,7 +68,7 @@ export const ProfileNameStandout = ({
 export const ProfileName = ({ children }: PropsWithChildren) => (
     <div className="profile-name">
         <h1 className="content">{children}</h1>
-        <span className="description">common-name</span>
+        <span className="description">Hi Hi</span>
         <style jsx>{`
             .profile-name {
                 background: #555;

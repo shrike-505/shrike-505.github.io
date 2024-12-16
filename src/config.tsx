@@ -1,18 +1,21 @@
 import {
+    Tb123,
+    TbBrandBilibili,
     TbBrandGithub,
     TbBrandSteam,
-    TbBrandTelegram,
-    TbBrandTwitter,
-    TbBrandWeibo,
     TbCookie,
-    TbNetwork,
-    TbSourceCode,
+    TbHorse,
+    TbMoodSadFilled,
+    TbStar,
 } from 'react-icons/tb'
-import ProfilePictureOriginal from './assets/images/amphineko.png'
-import ProfilePictureAvif from './assets/images/amphineko.png?format=avif'
-import ProfilePictureJpeg from './assets/images/amphineko.png?format=jpeg'
-import ProfilePicturePng from './assets/images/amphineko.png?format=png'
-import ProfilePictureWebp from './assets/images/amphineko.png?format=webp'
+import { 
+    IoIosSad,
+} from "react-icons/io"
+import ProfilePictureOriginal from './assets/images/PPa.jpeg'
+import ProfilePictureAvif from './assets/images/PPa.jpeg?format=avif'
+import ProfilePictureJpeg from './assets/images/PPa.jpeg?format=jpeg'
+import ProfilePicturePng from './assets/images/PPa.jpeg?format=png'
+import ProfilePictureWebp from './assets/images/PPa.jpeg?format=webp'
 import { ProfileNameStandout, ProfilePictureSources } from './components/display/header'
 import { Description, DescriptionTitle, Paragraph, Redacted } from './components/typography'
 
@@ -26,105 +29,120 @@ export const PROFILE_PICTURE: ProfilePictureSources = {
 
 export const PROFILE_NAME = (
     <>
-        {/* amphi[ne]ko */}
-        amphi
         <ProfileNameStandout
-            backgroundColor="hsla(0, 100%, 82%, 0.25)"
-            href="https://en.wikipedia.org/wiki/Neon"
-            hoverRuby="ね"
-            hoverColor="hsla(0, 100%, 82%, 0.75)"
+            backgroundColor="hsla(311, 91.20%, 82.20%, 0.79)"
+            href="#"
+            hoverRuby="shrike"
+            hoverColor="hsla(304, 63.60%, 53.70%, 0.86)"
             ruby="10"
         >
-            ne
+            伯劳
         </ProfileNameStandout>
-        ko
+        505
     </>
 )
 
 export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
     {
-        title: 'also-known-as',
+        title: 'AlsoKnownAs',
         tags: [
             {
-                tag: 'atomic-akarin',
-                comment: 'since 201?',
+                tag: '3141',
+                comment: 'since 2017',
             },
             {
-                tag: '1kar0s',
-                comment: 'since 202?',
+                tag: '1ps9wxb',
+                comment: 'since 2024',
             },
         ],
     },
     {
-        title: 'area-of-work',
+        title: 'CurrentLearning',
         tags: [
             {
-                tag: 'neteng',
-                icon: <TbNetwork />,
+                tag: 'System',
+                icon: <TbMoodSadFilled />,
             },
             {
-                tag: 'swe',
-                icon: <TbSourceCode />,
+                tag: 'AdvancedDataStructure',
+                icon: <IoIosSad />,
             },
         ],
     },
     {
-        title: 'languages',
+        title: 'Languages',
         tags: [
             {
-                tag: 'zh-cmn-Hans',
+                tag: '中文',
                 comment: 'native',
             },
             {
-                tag: 'en-GB',
+                tag: 'ENG',
             },
             {
-                tag: 'en-US',
-            },
-            {
-                tag: 'ja',
+                tag: '日本語',
                 comment: 'learning',
             },
+            {
+                tag: 'Swenska',
+                comment: 'learning',
+            }
         ],
     },
 ]
 
 export const ACCOUNTS: Accounts[] = [
     {
-        type: 'oss',
+        type: '笔记与作品集',
+        accounts: [
+            {
+                platform: 'Nest',
+                name: '现实的荒原',
+                icon: <TbCookie />,
+                iconBackground: '#f0621098',
+                url: 'https://shrike505.cc/',
+            }
+        ]
+    },
+    {
+        type: '博客',
+        accounts: [
+            {
+                platform: 'Eridanus',
+                name: 'Work in Progress',
+                icon: <TbStar />,
+                iconBackground: '#f0627098',
+            }
+        ]
+    },
+    {
+        type: 'Dev',
         accounts: [
             {
                 platform: 'GitHub',
-                name: 'amphineko',
-                url: 'https://github.com/amphineko/',
+                name: 'shrike-505',
+                url: 'https://github.com/shrike-505/',
                 icon: <TbBrandGithub />,
                 iconBackground: '#000000',
             },
         ],
     },
     {
-        type: 'social-accounts',
+        type: 'Party',
         accounts: [
             {
-                platform: 'Telegram',
-                name: '@amphineko',
-                url: 'https://telegram.me/amphineko',
-                icon: <TbBrandTelegram />,
-                iconBackground: '#0088ccaa',
+                platform: 'Fimtale',
+                name: '@叁壹肆壹',
+                url: 'https://fimtale.com/u/%E5%8F%81%E5%A3%B9%E8%82%86%E5%A3%B9',
+                icon: <TbHorse />,
+                iconBackground: '#f0627098',
             },
             {
-                platform: 'Twitter',
-                name: '@amphineko',
-                url: 'https://twitter.com/amphineko/',
-                icon: <TbBrandTwitter />,
-                iconBackground: '#1da1f2aa',
-            },
-            {
-                platform: 'Weibo',
-                name: 'redacted',
-                icon: <TbBrandWeibo />,
+                platform: 'BiliBili',
+                name: '@伯劳505',
+                icon: <TbBrandBilibili />,
                 iconBackground: '#ff9933aa',
-                redacted: true,
+                url: 'https://space.bilibili.com/164131287/',
             },
         ],
     },
@@ -132,25 +150,23 @@ export const ACCOUNTS: Accounts[] = [
         type: 'gaming',
         accounts: [
             {
-                platform: 'osu!',
-                name: 'Rukatan',
-                url: 'https://osu.ppy.sh/users/1344051',
-                icon: <TbCookie />,
-                iconBackground: '#f062a1aa',
-            },
-            {
                 platform: 'Steam',
-                name: '1kar0s',
-                url: 'https://steamcommunity.com/id/amphineko/',
+                name: 'RAINBOW_3141',
+                url: 'https://steamcommunity.com/id/3141shrike505/',
                 icon: <TbBrandSteam />,
                 iconBackground: '#000000aa',
             },
+        ],
+    },
+    {
+        type: '单行本',
+        accounts: [
             {
-                platform: 'VATSIM',
-                name: 'N190AP',
-                url: 'https://stats.vatsim.net/stats/1499554',
-                icon: <TbBrandSteam />,
-                iconBackground: '#ff9933aa',
+                platform: 'Goddess',
+                name: 'Work in Progress',
+                icon: <Tb123 />,
+                iconBackground: '#f0627098',
+                url: 'https://shrike505.cc/Goddess/',
             },
         ],
     },
@@ -180,7 +196,7 @@ export const DESCRIPTION_PARAGRAPHS = (
     </>
 )
 
-export const COPYRIGHT = 'Copyright © 2015-2024 amphineko. Illustrations have their own licenses.'
+export const COPYRIGHT = 'Copyright © 2024-? shrike505. Illustrations have their own licenses.'
 
 interface Account {
     platform: string

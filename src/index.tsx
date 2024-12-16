@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import type { IconType } from 'react-icons'
-import { TbBulb, TbGitBranch } from 'react-icons/tb'
+import { TbBrandGithub, TbBulb, TbGitFork } from 'react-icons/tb'
 import Background from './assets/images/background.svg'
 import { AccountShowcase } from './components/display/accounts.tsx'
 import { Capsule } from './components/display/capsule'
@@ -90,9 +90,14 @@ export const IndexPage = () => {
             </AccountShowcase.Container>
             <Row>{DESCRIPTION_PARAGRAPHS}</Row>
             <Footer>
-                <FooterParagraph icon={TbGitBranch as IconType} color="#ddd">
+                <FooterParagraph icon={TbBrandGithub as IconType} color="#ddd">
+                    <FooterLink href="https://github.com/shrike-505/Home">
+                        View source code of this page on GitHub
+                    </FooterLink>
+                </FooterParagraph>
+                <FooterParagraph icon={TbGitFork as IconType} color="#ddd">
                     <FooterLink href="https://github.com/amphineko/reactiveneko">
-                        Fork this template on GitHub: amphineko/reactiveneko
+                        Established upon the template of amphineko/reactiveneko, modified by myself
                     </FooterLink>
                 </FooterParagraph>
                 <FooterParagraph icon={TbBulb as IconType} color="#ddd">
@@ -117,8 +122,8 @@ export const IndexPage = () => {
                     background-size: cover;
                     display: flex;
                     flex-direction: column;
-                    font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
-                        'STHeiti Light', STXihei, '华文细黑', Heiti, '黑体', 'sans-serif';
+                    font-family: 'Ink Free', 'LXGWWenKai', 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
+                        'STHeiti Light', STXihei, '华文细黑', Heiti;
                     justify-content: center;
                     margin: 0;
                     min-height: 100vh;

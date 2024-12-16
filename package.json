@@ -1,22 +1,22 @@
 {
-    "name": "amphineko",
+    "name": "home",
     "version": "0.0.1",
-    "description": "",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/amphineko/amphineko.git"
+        "url": "git+https://github.com/shrike-505/Home.git"
     },
-    "author": "amphineko <sukareki@gmail.com>",
+    "author": "shrike505 <mikamidouya@outlook.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/amphineko/amphineko/issues"
+        "url": "https://github.com/shrike-505/Home/issues"
     },
-    "homepage": "https://futa.moe/amphineko/",
+    "homepage": "https://shrike505.cc/",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "deploy": "tsc && vite build && powershell ni dist/.nojekyll && git add -f dist/ && git commit -m \"Deploy on %DATE%\" && git subtree push --prefix dist origin gh-pages"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
