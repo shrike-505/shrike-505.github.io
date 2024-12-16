@@ -175,22 +175,9 @@ export const ACCOUNTS: Accounts[] = [
 export const DESCRIPTION_PARAGRAPHS = (
     <>
         <Description>
-            <DescriptionTitle smallCaps>what am i doing?</DescriptionTitle>
+            <DescriptionTitle smallCaps>TBD</DescriptionTitle>
             <Paragraph>
-                Network Enginner at Meta Platforms (<Redacted hoverToShow>Facebook</Redacted>) since 2022.
-            </Paragraph>
-            <Paragraph>Passionate full-stack software developer and open-source contributor.</Paragraph>
-            <Paragraph>
-                <del>Amautar</del> network engineer operating own Internet autonomous systems.
-            </Paragraph>
-        </Description>
-        <Description>
-            <DescriptionTitle smallCaps>what do i love?</DescriptionTitle>
-            <Paragraph>Ardently love of FPS, simulation and AVG.</Paragraph>
-            <Paragraph>Rhythm game is LIFE!</Paragraph>
-            <Paragraph>Retired and mission collection only Ingress agent.</Paragraph>
-            <Paragraph>
-                <del className="deleted">Dreamed to be a civil aviation pilot.</del>
+                TBD (<Redacted hoverToShow>recently...Maybe?</Redacted>)
             </Paragraph>
         </Description>
     </>
