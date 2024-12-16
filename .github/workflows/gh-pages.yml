@@ -16,8 +16,7 @@ jobs:
         node-version: '20.4'
         cache: 'yarn'
         cache-dependency-path: '**/yarn.lock'
-    - name: install yarn 
-      uses: npm install yarn
+    - run: npm install yarn
     - run: yarn install && yarn build  
     - name: upload files 
       uses: actions/upload-artifact@v4
