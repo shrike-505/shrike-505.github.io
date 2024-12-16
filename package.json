@@ -15,8 +15,8 @@
         "dev": "vite",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
-        "predeploy": "tsc && vite build",
-        "deploy": "gh-pages -d dist"
+        "build": "tsc && vite build",
+        "deploy": "gh-pages -d dist --message \"Deployed on %DATE%\""
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -44,6 +44,7 @@
         "eslint-plugin-prettier": "^5.0.0",
         "eslint-plugin-react": "^7.29.4",
         "eslint-plugin-react-hooks": "^4.4.0",
+        "gh-pages": "^6.2.0",
         "prettier": "^3.0.0",
         "sharp": "^0.33.2",
         "svgo": "^3.2.0",

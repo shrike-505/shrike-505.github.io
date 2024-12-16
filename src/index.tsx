@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import type { IconType } from 'react-icons'
 import { TbBrandGithub, TbBulb, TbGitFork } from 'react-icons/tb'
-import Background from './assets/images/background.svg'
+import Background from './assets/images/background.jpg'
 import { AccountShowcase } from './components/display/accounts.tsx'
 import { Capsule } from './components/display/capsule'
 import { Footer, FooterLink, FooterParagraph } from './components/display/footer'
