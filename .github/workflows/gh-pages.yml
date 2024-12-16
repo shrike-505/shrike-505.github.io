@@ -15,7 +15,9 @@ jobs:
       with:
         node-version: '20.4'
         cache: 'yarn'
-        cache-dependency-path: '**/yarn.lock'  
+        cache-dependency-path: '**/yarn.lock'
+    - name: install yarn 
+      uses: npm install yarn
     - run: yarn install && yarn build  
     - name: upload files 
       uses: actions/upload-artifact@v4
@@ -37,5 +39,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
           branch: gh-pages
-          folder: build 
+          folder: dist
           token: "${{ secrets.DEPLOY_TOKEN }}"  
