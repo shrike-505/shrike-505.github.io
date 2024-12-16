@@ -18,9 +18,6 @@ jobs:
         node-version: '20.4'
         cache: 'yarn'
         cache-dependency-path: '**/yarn.lock'
-    - name: Run install
-      uses: borales/actions-yarn@v4
-    - run: npm install yarn
     - run: yarn install && yarn build  
     - name: upload files 
       uses: actions/upload-artifact@v4
