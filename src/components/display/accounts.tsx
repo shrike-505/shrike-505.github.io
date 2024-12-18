@@ -41,13 +41,13 @@ const Category = ({ children, title }: PropsWithChildren<{ title: string }>) => 
             }
 
             .title {
-                color: #eee;
-                font-size: 1rem;
+                color:rgb(255, 255, 255);
+                font-size: 1.12rem;
+                font-weight: bold;
             }
 
             .title::before {
-                content: '#';
-                color: #aaa;
+                content: '🍩';
                 vertical-align: 0.1rem;
             }
 
