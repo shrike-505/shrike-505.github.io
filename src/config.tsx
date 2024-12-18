@@ -109,9 +109,10 @@ export const ACCOUNTS: Accounts[] = [
         accounts: [
             {
                 platform: 'Eridanus',
-                name: 'Work in Progress',
+                name: '波江巨洞',
                 icon: <TbStar />,
-                iconBackground: '#f0627098',
+                url: 'https://eridanus.shrike505.cc/',
+                iconBackground: 'rgb(181, 27, 27)',
             }
         ]
     },
@@ -128,7 +129,7 @@ export const ACCOUNTS: Accounts[] = [
         ],
     },
     {
-        type: 'Party',
+        type: '闲暇',
         accounts: [
             {
                 platform: 'Fimtale',
@@ -141,20 +142,20 @@ export const ACCOUNTS: Accounts[] = [
                 platform: 'BiliBili',
                 name: '@伯劳505',
                 icon: <TbBrandBilibili />,
-                iconBackground: '#ff9933aa',
+                iconBackground: 'rgb(227, 123, 201)',
                 url: 'https://space.bilibili.com/164131287/',
             },
         ],
     },
     {
-        type: 'gaming',
+        type: 'Gamer',
         accounts: [
             {
                 platform: 'Steam',
                 name: 'RAINBOW_3141',
                 url: 'https://steamcommunity.com/id/3141shrike505/',
                 icon: <TbBrandSteam />,
-                iconBackground: '#000000aa',
+                iconBackground: 'rgb(32, 14, 99)',
             },
         ],
     },
