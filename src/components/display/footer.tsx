@@ -1,6 +1,7 @@
 import { PropsWithChildren } from 'react'
 import { IconType } from 'react-icons'
 import { TbExternalLink } from 'react-icons/tb'
+import { BORDER_RADIUS } from '../../lib/css';
 
 export const FooterParagraph = ({
     backgroundColor,
@@ -20,13 +21,17 @@ export const FooterParagraph = ({
             .paragraph {
                 color: ${color ?? '#eee'};
                 text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5);
-
+                // font-weight: bold;
                 font-size: 0.8em;
                 margin: 0;
                 padding: 0.75em 1em;
+                background: #ffffffee;
+                border-radius: ${BORDER_RADIUS};
+                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
             }
 
             .icon {
+                text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5);
                 display: inline-block;
                 font-size: 1.2em;
                 vertical-align: middle;

@@ -33,7 +33,7 @@ export const ProfileNameStandout = ({
                     position: relative;
                     text-decoration: none;
                     transition-duration: 0.5s;
-                    font-family: 'Heiti TC', 'Victor Mono';
+                    font-family: 'LXGW Wenkai';
                 }
 
                 .standout::after {
