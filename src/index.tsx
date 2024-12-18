@@ -10,6 +10,8 @@ import { Row } from './components/layout'
 import { Dimmed } from './components/typography'
 import { ACCOUNTS, COPYRIGHT, DESCRIPTION_PARAGRAPHS, PROFILE_NAME, PROFILE_PICTURE, PROFILE_TAGS } from './config.tsx'
 import { classnames } from './lib/classnames.ts'
+import faviconImage from './assets/images/favicon.jpg';
+import ReactFavicon from 'react-favicon';
 
 function ProfileLabel({ children, comment, icon }: { children: string; comment?: string; icon?: ReactNode }) {
     const className = classnames({
@@ -55,6 +57,8 @@ function ProfileLabel({ children, comment, icon }: { children: string; comment?:
 export const IndexPage = () => {
     return (
         <div className="container">
+            <ReactFavicon url={faviconImage} />
+            <title>shrike505 | Homepage</title>
             <Header profilePicture={PROFILE_PICTURE} profileName={PROFILE_NAME}>
                 <ProfileAddons>
                     {PROFILE_TAGS.map(({ tags, title }) => (
@@ -90,17 +94,17 @@ export const IndexPage = () => {
             </AccountShowcase.Container>
             <Row>{DESCRIPTION_PARAGRAPHS}</Row>
             <Footer>
-                <FooterParagraph icon={TbBrandGithub as IconType} color="#ddd">
+                <FooterParagraph icon={TbBrandGithub as IconType} color="#000000">
                     <FooterLink href="https://github.com/shrike-505/Home">
                         View source code of this page on GitHub
                     </FooterLink>
                 </FooterParagraph>
-                <FooterParagraph icon={TbGitFork as IconType} color="#ddd">
+                <FooterParagraph icon={TbGitFork as IconType} color="#000">
                     <FooterLink href="https://github.com/amphineko/reactiveneko">
                         Established upon the template of amphineko/reactiveneko, modified by myself
                     </FooterLink>
                 </FooterParagraph>
-                <FooterParagraph icon={TbBulb as IconType} color="#ddd">
+                <FooterParagraph icon={TbBulb as IconType} color="#000">
                     {COPYRIGHT}
                 </FooterParagraph>
             </Footer>
@@ -113,16 +117,19 @@ export const IndexPage = () => {
                     max-width: 64em;
                     margin: 0 auto;
                 }
+                .title {
+                    color:rgb(32, 139, 0); /* color of the title */
+                }
             `}</style>
 
             <style jsx global>{`
                 body {
                     background: url(${Background});
-                    background-color: #aaa;
+                    background-color:rgb(115, 0, 255);
                     background-size: cover;
                     display: flex;
                     flex-direction: column;
-                    font-family: 'Ink Free', 'LXGWWenKai', 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
+                    font-family: 'Ink Free', 'LXGW Wenkai', 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
                         'STHeiti Light', STXihei, '华文细黑', Heiti;
                     justify-content: center;
                     margin: 0;
