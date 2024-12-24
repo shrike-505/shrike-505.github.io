@@ -18,7 +18,9 @@ jobs:
         node-version: '20.4'
         cache: 'yarn'
         cache-dependency-path: '**/yarn.lock'
-    - run: yarn install && yarn build  
+    - run: yarn install && yarn build
+    - name: Edit CNAME
+      run: echo -n shrike505.cc > ./dist/CNAME
     - name: upload files 
       uses: actions/upload-artifact@v4
       with: 
