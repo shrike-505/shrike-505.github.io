@@ -100,7 +100,7 @@ export const ACCOUNTS: Accounts[] = [
                 name: '现实的荒原',
                 icon: <TbCookie />,
                 iconBackground: '#f0621098',
-                url: 'https://shrike505.cc/',
+                url: 'https://nest.shrike505.cc/',
             }
         ]
     },
