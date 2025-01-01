@@ -125,7 +125,7 @@ export const IndexPage = () => {
             <style jsx global>{`
                 body {
                     background: url(${Background});
-                    background-color:rgb(115, 0, 255);
+                    background-color:rgb(224, 83, 83);
                     background-size: cover;
                     display: flex;
                     flex-direction: column;

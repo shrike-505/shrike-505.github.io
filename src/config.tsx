@@ -31,7 +31,7 @@ export const PROFILE_NAME = (
     <>
         <ProfileNameStandout
             backgroundColor="hsla(311, 91.20%, 82.20%, 0.79)"
-            href="#"
+            href="https://zh.wikipedia.org/wiki/%E4%BC%AF%E5%8A%B3%E7%A7%91"
             hoverRuby="shrike"
             hoverColor="hsla(304, 63.60%, 53.70%, 0.86)"
             ruby="10"
