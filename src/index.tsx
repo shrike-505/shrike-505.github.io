@@ -101,7 +101,7 @@ export const IndexPage = () => {
                 </FooterParagraph>
                 <FooterParagraph icon={TbGitFork as IconType} color="#000">
                     <FooterLink href="https://github.com/amphineko/reactiveneko">
-                        Established upon the template of amphineko/reactiveneko, modified by myself
+                        Established upon the template of amphineko/reactiveneko
                     </FooterLink>
                 </FooterParagraph>
                 <FooterParagraph icon={TbBulb as IconType} color="#000">

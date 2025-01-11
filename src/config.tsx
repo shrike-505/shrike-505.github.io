@@ -1,23 +1,20 @@
 import {
-    Tb123,
+    TbGalaxy,
     TbBrandBilibili,
     TbBrandGithub,
     TbBrandSteam,
     TbCookie,
     TbHorse,
-    TbMoodSadFilled,
-    TbStar,
+    TbChessQueenFilled,
+    TbPlayerTrackNextFilled,
 } from 'react-icons/tb'
-import { 
-    IoIosSad,
-} from "react-icons/io"
 import ProfilePictureOriginal from './assets/images/PPa.jpeg'
 import ProfilePictureAvif from './assets/images/PPa.jpeg?format=avif'
 import ProfilePictureJpeg from './assets/images/PPa.jpeg?format=jpeg'
 import ProfilePicturePng from './assets/images/PPa.jpeg?format=png'
 import ProfilePictureWebp from './assets/images/PPa.jpeg?format=webp'
 import { ProfileNameStandout, ProfilePictureSources } from './components/display/header'
-import { Description, DescriptionTitle, Paragraph, Redacted } from './components/typography'
+import { Description, DescriptionTitle, ExternalLink, Paragraph, Quotation, Redacted } from './components/typography'
 
 export const PROFILE_PICTURE: ProfilePictureSources = {
     src: ProfilePictureOriginal,
@@ -57,15 +54,11 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
         ],
     },
     {
-        title: 'CurrentLearning',
+        title: 'Recent Activity',
         tags: [
             {
-                tag: 'System',
-                icon: <TbMoodSadFilled />,
-            },
-            {
-                tag: 'AdvancedDataStructure',
-                icon: <IoIosSad />,
+                tag: 'Traveling',
+                icon: <TbPlayerTrackNextFilled />,
             },
         ],
     },
@@ -85,7 +78,7 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
             },
             {
                 tag: 'Swenska',
-                comment: 'learning',
+                comment: 'starting',
             }
         ],
     },
@@ -97,7 +90,7 @@ export const ACCOUNTS: Accounts[] = [
         accounts: [
             {
                 platform: 'Nest',
-                name: '现实的荒原',
+                name: '#现实的荒原',
                 icon: <TbCookie />,
                 iconBackground: '#f0621098',
                 url: 'https://nest.shrike505.cc/',
@@ -109,10 +102,10 @@ export const ACCOUNTS: Accounts[] = [
         accounts: [
             {
                 platform: 'Eridanus',
-                name: '波江巨洞',
-                icon: <TbStar />,
+                name: '#波江巨洞',
+                icon: <TbGalaxy />,
                 url: 'https://eridanus.shrike505.cc/',
-                iconBackground: 'rgb(181, 27, 27)',
+                iconBackground: 'rgb(112, 154, 231)',
             }
         ]
     },
@@ -121,7 +114,7 @@ export const ACCOUNTS: Accounts[] = [
         accounts: [
             {
                 platform: 'GitHub',
-                name: 'shrike-505',
+                name: '@shrike-505',
                 url: 'https://github.com/shrike-505/',
                 icon: <TbBrandGithub />,
                 iconBackground: '#000000',
@@ -152,7 +145,7 @@ export const ACCOUNTS: Accounts[] = [
         accounts: [
             {
                 platform: 'Steam',
-                name: 'RAINBOW_3141',
+                name: '@RAINBOW_3141',
                 url: 'https://steamcommunity.com/id/3141shrike505/',
                 icon: <TbBrandSteam />,
                 iconBackground: 'rgb(32, 14, 99)',
@@ -165,8 +158,8 @@ export const ACCOUNTS: Accounts[] = [
             {
                 platform: 'Goddess',
                 name: 'Work in Progress',
-                icon: <Tb123 />,
-                iconBackground: '#f0627098',
+                icon: <TbChessQueenFilled />,
+                iconBackground: 'rgb(255, 0, 0)',
                 url: 'https://shrike505.cc/Goddess/',
             },
         ],
@@ -176,10 +169,25 @@ export const ACCOUNTS: Accounts[] = [
 export const DESCRIPTION_PARAGRAPHS = (
     <>
         <Description>
-            <DescriptionTitle smallCaps>TBD</DescriptionTitle>
+            <DescriptionTitle smallCaps>about</DescriptionTitle>
             <Paragraph>
-                TBD (<Redacted hoverToShow>recently...Maybe?</Redacted>)
+                <Quotation>
+                    自然赠予你 树冠 微风 肩头的暴雨
+                </Quotation>
             </Paragraph>
+            <Paragraph>
+                Sobbing student with awful code ability however pursuing some code-related degree, Maverick, Writer <Redacted hoverToShow>withPretension</Redacted>.
+            </Paragraph>
+            <Paragraph>
+                Partyholic chasing steps of <ExternalLink href="https://www.bilibili.com/bangumi/play/ep65467" color='Pink'>Pinkamena Diane Pie</ExternalLink>
+            </Paragraph>
+            <Paragraph>
+                Wish you find peace all around here.
+            </Paragraph>
+            {/* <DescriptionTitle smallCaps>code of life</DescriptionTitle>
+            <Paragraph>
+                Joy & Fun
+            </Paragraph> */}
         </Description>
     </>
 )

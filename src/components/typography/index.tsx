@@ -4,6 +4,9 @@ import { classnames } from '../../lib/classnames'
 import RedactedOtf from '../../assets/fonts/redacted/otf/RedactedScript-Bold.otf'
 import RedactedTtf from '../../assets/fonts/redacted/ttf/RedactedScript-Bold.ttf'
 import RedactedWoff2 from '../../assets/fonts/redacted/woff/RedactedScript-Bold.woff2'
+import InkFree from '../../assets/fonts/main/InkFree.ttf'
+import LXGWWenkai from '../../assets/fonts/main/LXGWWenkai.ttf'
+import { TbExternalLink } from 'react-icons/tb'
 
 export const Description = ({ children }: PropsWithChildren) => (
     <>
@@ -60,7 +63,9 @@ export const Dimmed = ({ children }: PropsWithChildren) => (
     </>
 )
 
-export const Paragraph = ({ children }: PropsWithChildren) => (
+export const Paragraph = ({
+    children,
+}: PropsWithChildren) => (
     <>
         <p className="paragraph">{children}</p>
         <style jsx>{`
@@ -72,6 +77,59 @@ export const Paragraph = ({ children }: PropsWithChildren) => (
         `}</style>
     </>
 )
+
+export const Quotation = ({
+    children,
+}: PropsWithChildren) => (
+    <>
+        <blockquote className="quotation">
+            <p>{children}</p>
+        </blockquote>
+        <style jsx>{`
+            .quotation {
+                background:rgba(249, 249, 249, 0.71);
+                border-left: 10px solid #ccc;
+                margin: 1.5em 10px;
+                padding: 0.5em 10px;
+                color: #666;
+            }
+            .quotation:before {
+                color: #ccc;
+                content: open-quote;
+                font-size: 3em;
+                line-height: 0.1em;
+                margin-right: 0.25em;
+                vertical-align: -0.4em;
+            }
+            .quotation p {
+                display: inline;
+            }
+        `}</style>
+    </>
+)
+
+export const ExternalLink = ({ children, href, color }: PropsWithChildren<{ href: string, color?: string }>) => (
+    <>
+        <a className="ext-link" href={href} rel="noopener noreferrer" target="_blank">
+            {children}
+            <span className="external-link-icon">
+                <TbExternalLink />
+            </span>
+        </a>
+        <style jsx>{`
+            .ext-link {
+                color: ${color ?? 'inherit'};
+            }
+
+            .external-link-icon {
+                font-size: 0.75em;
+                margin-left: 0.5em;
+                vertical-align: 0.25em;
+            }
+        `}</style>
+    </>
+)
+
 
 export const Redacted = ({
     children,
@@ -117,6 +175,21 @@ export const RedactedFont = () => (
                     url('${RedactedTtf}') format('opentype'),
                     url('${RedactedWoff2}') format('truetype');
             }
+        `}
+    </style>
+)
+
+export const MainFont = () => (
+    <style jsx global>
+        {`
+            @font-face {
+                font-family: 'Ink Free';
+                src: url('${InkFree}') format('truetype');
+            };
+            @font-face {
+                font-family: 'LXGW Wenkai';
+                src: url('${LXGWWenkai}') format('truetype');
+            };
         `}
     </style>
 )

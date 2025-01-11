@@ -4,13 +4,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { IndexPage } from '.'
-import { RedactedFont } from './components/typography'
+import { RedactedFont, MainFont } from './components/typography'
 
 function Main() {
     return (
         <>
             <IndexPage />
             <RedactedFont />
+            <MainFont />
         </>
     )
 }
