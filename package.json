@@ -3,14 +3,14 @@
     "version": "0.0.1",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/shrike-505/Home.git"
+        "url": "git+https://github.com/shrike-505/shrike-505.github.io.git"
     },
     "author": "shrike505 <mikamidouya@outlook.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/shrike-505/Home/issues"
+        "url": "https://github.com/shrike-505/shrike-505.github.io/issues"
     },
-    "homepage": "https://shrike505.cc/Home",
+    "homepage": "https://shrike505.cc/",
     "scripts": {
         "dev": "vite",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
