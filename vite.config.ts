@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import { imagetools } from 'vite-imagetools'
-
+import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
     base: '',
     plugins: [
@@ -11,5 +11,6 @@ export default defineConfig({
             },
         }),
         imagetools(),
+        tailwindcss(),
     ],
 })
