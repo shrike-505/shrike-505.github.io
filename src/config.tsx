@@ -6,8 +6,9 @@ import {
     TbCookie,
     TbHorse,
     TbChessQueenFilled,
-    TbPlayerTrackNextFilled,
+    TbBrandCpp,
 } from 'react-icons/tb'
+import { SiKakaotalk } from 'react-icons/si'
 import ProfilePictureOriginal from './assets/images/PPa.jpeg'
 import ProfilePictureAvif from './assets/images/PPa.jpeg?format=avif'
 import ProfilePictureJpeg from './assets/images/PPa.jpeg?format=jpeg'
@@ -41,7 +42,7 @@ export const PROFILE_NAME = (
 
 export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
     {
-        title: 'AlsoKnownAs',
+        title: 'Also Known As',
         tags: [
             {
                 tag: '3141',
@@ -54,11 +55,18 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
         ],
     },
     {
-        title: 'Recent Activity',
+        title: 'Currently Learning',
         tags: [
             {
-                tag: 'Traveling',
-                icon: <TbPlayerTrackNextFilled />,
+                tag: 'C++',
+                icon: <TbBrandCpp />,
+                comment: 'What is this?',
+                url: 'https://nest.shrike505.cc/notes/Language/Cpp/',
+            },
+            {
+                tag: '语言学',
+                icon: <SiKakaotalk />,
+                url: 'https://nest.shrike505.cc/notes/Literature/BasicLinguistics/',
             },
         ],
     },
@@ -122,7 +130,7 @@ export const ACCOUNTS: Accounts[] = [
         ],
     },
     {
-        type: '闲暇',
+        type: 'Leisure',
         accounts: [
             {
                 platform: 'Fimtale',
@@ -141,7 +149,7 @@ export const ACCOUNTS: Accounts[] = [
         ],
     },
     {
-        type: 'Gamer',
+        type: 'Gaming',
         accounts: [
             {
                 platform: 'Steam',
@@ -182,7 +190,7 @@ export const DESCRIPTION_PARAGRAPHS = (
                 Partyholic chasing steps of <ExternalLink href="https://www.bilibili.com/bangumi/play/ep65467" color='Pink'>Pinkamena Diane Pie</ExternalLink>
             </Paragraph>
             <Paragraph>
-                Wish you find peace all around here.
+                Wanna spending half of life foretelling the future and traveling back in time.
             </Paragraph>
             {/* <DescriptionTitle smallCaps>code of life</DescriptionTitle>
             <Paragraph>
@@ -212,6 +220,7 @@ interface ProfileHeaderTag {
     tag: string
     comment?: string
     icon?: JSX.Element
+    url?: string
 }
 
 interface ProfileHeaderTagGroup {

@@ -13,14 +13,15 @@ import { classnames } from './lib/classnames.ts'
 import faviconImage from './assets/images/favicon.jpg';
 import ReactFavicon from 'react-favicon';
 
-function ProfileLabel({ children, comment, icon }: { children: string; comment?: string; icon?: ReactNode }) {
+function ProfileLabel({ children, comment, icon, url }: { children: string; comment?: string; icon?: ReactNode; url?: string }) {
     const className = classnames({
         label: true,
         'no-comment': !comment,
         'no-icon': !icon,
+        'no-link': !url,
     })
     return (
-        <Capsule background="#333" icon={icon} iconBackground="white" iconColor="black" iconType="sharp" sharp>
+        <Capsule background="#333" href={url} icon={icon} iconBackground="white" iconColor="black" iconType="sharp" sharp>
             <span className={className}>
                 {children}
                 {comment && (
@@ -49,6 +50,9 @@ function ProfileLabel({ children, comment, icon }: { children: string; comment?:
                     font-weight: 300;
                     margin-left: 0.4em;
                 }
+                #label-link {
+                    color: white;
+                }
             `}</style>
         </Capsule>
     )
@@ -63,8 +67,8 @@ export const IndexPage = () => {
                 <ProfileAddons>
                     {PROFILE_TAGS.map(({ tags, title }) => (
                         <ProfileAddonGroup key={title} title={title}>
-                            {tags.map(({ comment, icon, tag }) => (
-                                <ProfileLabel key={tag} comment={comment} icon={icon}>
+                            {tags.map(({ comment, icon, tag, url }) => (
+                                <ProfileLabel key={tag} comment={comment} icon={icon} url={url}>
                                     {tag}
                                 </ProfileLabel>
                             ))}
