@@ -7,8 +7,8 @@ import {
     TbHorse,
     TbChessQueenFilled,
     TbBrandCpp,
+    TbLogicXor,
 } from 'react-icons/tb'
-import { SiKakaotalk } from 'react-icons/si'
 import ProfilePictureOriginal from './assets/images/PPa.jpeg'
 import ProfilePictureAvif from './assets/images/PPa.jpeg?format=avif'
 import ProfilePictureJpeg from './assets/images/PPa.jpeg?format=jpeg'
@@ -64,9 +64,9 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
                 url: 'https://nest.shrike505.cc/notes/Language/Cpp/',
             },
             {
-                tag: '语言学',
-                icon: <SiKakaotalk />,
-                url: 'https://nest.shrike505.cc/notes/Literature/BasicLinguistics/',
+                tag: '逻辑学',
+                icon: <TbLogicXor />,
+                url: 'https://nest.shrike505.cc/notes/AI/AIL/',
             },
         ],
     },
