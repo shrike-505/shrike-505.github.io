@@ -6,9 +6,9 @@ import {
     TbCookie,
     TbHorse,
     TbChessQueenFilled,
-    TbBrandCpp,
-    TbLogicXor,
+    TbCalendar,
 } from 'react-icons/tb'
+import { GiJapan } from "react-icons/gi"
 import ProfilePictureOriginal from './assets/images/PPa.jpeg'
 import ProfilePictureAvif from './assets/images/PPa.jpeg?format=avif'
 import ProfilePictureJpeg from './assets/images/PPa.jpeg?format=jpeg'
@@ -55,19 +55,25 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
         ],
     },
     {
-        title: 'Currently Learning',
+        title: 'Maybe working on for one whole summer',
         tags: [
             {
-                tag: 'C++',
-                icon: <TbBrandCpp />,
+                tag: 'Toefl',
+                icon: <TbCalendar />,
                 comment: 'What is this?',
                 url: 'https://nest.shrike505.cc/notes/Language/Cpp/',
             },
             {
-                tag: '逻辑学',
-                icon: <TbLogicXor />,
-                url: 'https://nest.shrike505.cc/notes/AI/AIL/',
+                tag: '日本語',
+                icon: <GiJapan />,
+                comment: 'Learning',
             },
+            {
+                tag: 'Goddess',
+                icon: <TbChessQueenFilled />,
+                comment: 'Cold Old Reality',
+                url: 'https://shrike505.cc/Goddess/',
+            }
         ],
     },
     {
@@ -84,10 +90,6 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
                 tag: '日本語',
                 comment: 'learning',
             },
-            {
-                tag: 'Swenska',
-                comment: 'starting',
-            }
         ],
     },
 ]
