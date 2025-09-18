@@ -6,9 +6,9 @@ import {
     TbCookie,
     TbHorse,
     TbChessQueenFilled,
-    TbCalendar,
+    TbNetwork,
 } from 'react-icons/tb'
-import { GiJapan } from "react-icons/gi"
+import { GiComputerFan } from "react-icons/gi"
 import ProfilePictureOriginal from './assets/images/PPa.jpeg'
 import ProfilePictureAvif from './assets/images/PPa.jpeg?format=avif'
 import ProfilePictureJpeg from './assets/images/PPa.jpeg?format=jpeg'
@@ -55,18 +55,19 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
         ],
     },
     {
-        title: 'Maybe working on for one whole summer',
+        title: 'Currently Striving In',
         tags: [
             {
-                tag: 'Toefl',
-                icon: <TbCalendar />,
-                comment: 'What is this?',
-                url: 'https://nest.shrike505.cc/notes/Language/Cpp/',
+                tag: 'Computer Networks',
+                icon: <TbNetwork />,
+                comment: 'We ALL like it',
+                url: 'https://nest.shrike505.cc/notes/ComputerScience/ComputerNetwork/',
             },
             {
-                tag: '日本語',
-                icon: <GiJapan />,
-                comment: 'Learning',
+                tag: 'TCS',
+                icon: <GiComputerFan />,
+                comment: 'Shall we dance',
+                url: 'https://nest.shrike505.cc/notes/ComputerScience/TCS/',
             },
             {
                 tag: 'Goddess',
@@ -88,7 +89,7 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
             },
             {
                 tag: '日本語',
-                comment: 'learning',
+                comment: 'lil bit',
             },
         ],
     },
@@ -192,7 +193,7 @@ export const DESCRIPTION_PARAGRAPHS = (
                 Partyholic chasing steps of <ExternalLink href="https://www.bilibili.com/bangumi/play/ep65467" color='Pink'>Pinkamena Diane Pie</ExternalLink>
             </Paragraph>
             <Paragraph>
-                Wanna spending half of life foretelling the future and traveling back in time.
+                Wanna spend half of life foretelling the future and traveling back in time.
             </Paragraph>
             {/* <DescriptionTitle smallCaps>code of life</DescriptionTitle>
             <Paragraph>
