@@ -97,7 +97,7 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
 
 export const ACCOUNTS: Accounts[] = [
     {
-        type: '笔记与作品集',
+        type: '笔记与作品集/Artworks',
         accounts: [
             {
                 platform: 'Nest',
@@ -109,7 +109,7 @@ export const ACCOUNTS: Accounts[] = [
         ]
     },
     {
-        type: '博客',
+        type: '博客/Blog',
         accounts: [
             {
                 platform: 'Eridanus',
@@ -121,7 +121,7 @@ export const ACCOUNTS: Accounts[] = [
         ]
     },
     {
-        type: 'Dev',
+        type: '开发/Dev',
         accounts: [
             {
                 platform: 'GitHub',
@@ -133,7 +133,7 @@ export const ACCOUNTS: Accounts[] = [
         ],
     },
     {
-        type: 'Leisure',
+        type: '闲暇/Leisure',
         accounts: [
             {
                 platform: 'Fimtale',
@@ -149,11 +149,6 @@ export const ACCOUNTS: Accounts[] = [
                 iconBackground: 'rgb(227, 123, 201)',
                 url: 'https://space.bilibili.com/164131287/',
             },
-        ],
-    },
-    {
-        type: 'Gaming',
-        accounts: [
             {
                 platform: 'Steam',
                 name: '@RAINBOW_3141',
@@ -164,7 +159,7 @@ export const ACCOUNTS: Accounts[] = [
         ],
     },
     {
-        type: '单行本',
+        type: '单行本/Standalones',
         accounts: [
             {
                 platform: 'Goddess',
@@ -180,10 +175,10 @@ export const ACCOUNTS: Accounts[] = [
 export const DESCRIPTION_PARAGRAPHS = (
     <>
         <Description>
-            <DescriptionTitle smallCaps>about</DescriptionTitle>
+            <DescriptionTitle smallCaps>profile</DescriptionTitle>
             <Paragraph>
                 <Quotation>
-                    自然赠予你 树冠 微风 肩头的暴雨
+                    在科学和啤酒都不能安抚的夜晚 他们丢失了四季
                 </Quotation>
             </Paragraph>
             <Paragraph>
@@ -195,10 +190,9 @@ export const DESCRIPTION_PARAGRAPHS = (
             <Paragraph>
                 Wanna spend half of life foretelling the future and traveling back in time.
             </Paragraph>
-            {/* <DescriptionTitle smallCaps>code of life</DescriptionTitle>
             <Paragraph>
-                Joy & Fun
-            </Paragraph> */}
+                Enjoy your farce-like life with ultimate sorrow, pal.
+            </Paragraph>
         </Description>
     </>
 )
