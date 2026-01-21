@@ -99,7 +99,7 @@ export const IndexPage = () => {
             <Row>{DESCRIPTION_PARAGRAPHS}</Row>
             <Footer>
                 <FooterParagraph icon={TbBrandGithub as IconType} color="#000000">
-                    <FooterLink href="https://github.com/shrike-505/Home">
+                    <FooterLink href="https://github.com/shrike-505/shrike-505.github.io">
                         View source code of this page on GitHub
                     </FooterLink>
                 </FooterParagraph>

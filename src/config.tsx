@@ -55,20 +55,8 @@ export const PROFILE_TAGS: ProfileHeaderTagGroup[] = [
         ],
     },
     {
-        title: 'Currently Striving In',
+        title: 'What am I doing recently',
         tags: [
-            {
-                tag: 'Computer Networks',
-                icon: <TbNetwork />,
-                comment: 'We ALL like it',
-                url: 'https://nest.shrike505.cc/notes/ComputerScience/ComputerNetwork/',
-            },
-            {
-                tag: 'TCS',
-                icon: <GiComputerFan />,
-                comment: 'Shall we dance',
-                url: 'https://nest.shrike505.cc/notes/ComputerScience/TCS/',
-            },
             {
                 tag: 'Goddess',
                 icon: <TbChessQueenFilled />,
@@ -182,22 +170,22 @@ export const DESCRIPTION_PARAGRAPHS = (
                 </Quotation>
             </Paragraph>
             <Paragraph>
-                Sobbing student with awful code ability however pursuing some code-related degree, Maverick, Writer <Redacted hoverToShow>withPretension</Redacted>.
+                Sorrowful student pursuing some seemingly glamorous degree, Artist aiming to create the one and only true masterpiece, Maverick <Redacted hoverToShow>with</Redacted> <Redacted hoverToShow>pretension</Redacted>.
             </Paragraph>
             <Paragraph>
-                Partyholic chasing steps of <ExternalLink href="https://www.bilibili.com/bangumi/play/ep65467" color='Pink'>Pinkamena Diane Pie</ExternalLink>
+                Though tryna be in nice mood, in the spirit of <ExternalLink href="https://www.bilibili.com/bangumi/play/ep65467" color='Pink'>Pinkamena Diane Pie</ExternalLink>
             </Paragraph>
             <Paragraph>
-                Wanna spend half of life foretelling the future and traveling back in time.
+                Leading an uncertain life full of miseries, I really wish to spend half of life foretelling the future, traveling back in history, and recording the present.
             </Paragraph>
             <Paragraph>
-                Enjoy your farce-like life with ultimate sorrow, pal.
+                Does it cost anything -- to be endowed with justice?
             </Paragraph>
         </Description>
     </>
 )
 
-export const COPYRIGHT = 'Copyright © 2024-? shrike505. Illustrations have their own licenses.'
+export const COPYRIGHT = 'Copyright © 2024-2025 shrike505. Illustrations have their own licenses.'
 
 interface Account {
     platform: string
