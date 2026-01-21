@@ -6,9 +6,8 @@ import {
     TbCookie,
     TbHorse,
     TbChessQueenFilled,
-    TbNetwork,
 } from 'react-icons/tb'
-import { GiComputerFan } from "react-icons/gi"
+
 import ProfilePictureOriginal from './assets/images/PPa.jpeg'
 import ProfilePictureAvif from './assets/images/PPa.jpeg?format=avif'
 import ProfilePictureJpeg from './assets/images/PPa.jpeg?format=jpeg'
